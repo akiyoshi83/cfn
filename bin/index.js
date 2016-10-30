@@ -36,6 +36,22 @@ argv.mod({
   ]
 });
 
+argv.mod({
+  mod: 'create',
+  description: 'create stack from template at S3',
+  options: [
+    { name: 'help', short: 'h', type: 'boolean', description: '', example: '' }
+  ]
+});
+
+argv.mod({
+  mod: 'delete',
+  description: 'delete stack',
+  options: [
+    { name: 'help', short: 'h', type: 'boolean', description: '', example: '' }
+  ]
+});
+
 const args = argv.run();
 
 if (args.options.help) {
@@ -50,6 +66,8 @@ switch (args.mod) {
   case 'build': { cfn.build(); break; }
   case 'validate': { cfn.validate(); break; }
   case 'upload': { cfn.upload(); break; }
+  case 'create': { cfn.create(); break; }
+  case 'delete': { cfn.delete(); break; }
   default: { argv.help(); break; }
 }
 

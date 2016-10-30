@@ -10,3 +10,9 @@ node ../bin/index.js validate
 
 echo "TEST upload"
 node ../bin/index.js upload
+
+#echo "TEST create"
+#node ../bin/index.js create
+
+#echo "TEST delete"
+#node ../bin/index.js delete
