@@ -1,0 +1,35 @@
+{
+  "name": "cfn",
+  "description": "CloudFormation helper",
+  "version": "0.0.1",
+  "author": {
+    "name": "akiyoshi83",
+    "email": "mail@akiyoshi.info"
+  },
+  "bin": {
+    "cfn": "bin/index.js"
+  },
+  "bugs": {
+    "url": "git+https://github.com/akiyoshi83/cfn/issues"
+  },
+  "dependencies": {
+    "argv": "0.0.2",
+    "aws-sdk": "^2.6.12"
+  },
+  "engine": {
+    "node": ">=4.0.0"
+  },
+  "keywords": [
+    "AWS",
+    "CloudFormation"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akiyoshi83/cfn.git"
+  },
+  "scripts": {
+    "test": "(cd test; sh test.sh)"
+  }
+}
