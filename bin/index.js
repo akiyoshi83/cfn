@@ -2,6 +2,15 @@
 
 const argv = require('argv');
 const Cfn = require('../lib/index.js');
+const init = require('../lib/init.js');
+
+argv.mod({
+  mod: 'init',
+  description: 'initialize cfn',
+  options: [
+    { name: 'help', short: 'h', type: 'boolean', description: '', example: '' }
+  ]
+});
 
 argv.mod({
   mod: 'build',
@@ -37,6 +46,7 @@ if (args.options.help) {
 let cfn = new Cfn();
 
 switch (args.mod) {
+  case 'init': { init(process.cwd()); break; }
   case 'build': { cfn.build(); break; }
   case 'validate': { cfn.validate(); break; }
   case 'upload': { cfn.upload(); break; }
