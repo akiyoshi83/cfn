@@ -3,12 +3,7 @@
     "Description": "CloudFormation template writen by JavaScript example",
     "Parameters": {},
     "Resources": {
-        "Bucket": {
-            "Type": "AWS::S3::Bucket",
-            "Properties": {
-                "BucketName": "cfn-test-result"
-            }
-        }
+      <%- include('./template-s3.json.ejs', {}) %>
     },
     "Mappings": {},
     "Outputs": {}

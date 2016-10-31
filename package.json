@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "argv": "0.0.2",
-    "aws-sdk": "^2.6.12"
+    "aws-sdk": "^2.6.12",
+    "ejs": "^2.5.2"
   },
   "engine": {
     "node": ">=4.0.0"
