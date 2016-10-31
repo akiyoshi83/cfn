@@ -52,6 +52,22 @@ argv.mod({
   ]
 });
 
+argv.mod({
+  mod: 'update',
+  description: 'update stack',
+  options: [
+    { name: 'help', short: 'h', type: 'boolean', description: '', example: '' }
+  ]
+});
+
+argv.mod({
+  mod: 'describe',
+  description: 'describe stack',
+  options: [
+    { name: 'help', short: 'h', type: 'boolean', description: '', example: '' }
+  ]
+});
+
 const args = argv.run();
 
 if (args.options.help) {
@@ -68,6 +84,8 @@ switch (args.mod) {
   case 'upload': { cfn.upload(); break; }
   case 'create': { cfn.create(); break; }
   case 'delete': { cfn.delete(); break; }
+  case 'update': { cfn.update(); break; }
+  case 'describe': { cfn.describe(); break; }
   default: { argv.help(); break; }
 }
 
