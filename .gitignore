@@ -1,4 +1,5 @@
 test/dist
+tmp/
 
 ### https://raw.github.com/github/gitignore/ef8772f1346e95272f6ee2fa76ce502c88444a7b/Global/Linux.gitignore
 
