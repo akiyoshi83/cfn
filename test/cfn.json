@@ -1,6 +1,6 @@
 {
   "region": "us-east-1",
-  "templatePath": "./template.json.ejs",
+  "templatePath": "src/template.json.ejs",
   "stackName": "CfnTestStack",
   "s3": {
     "bucket": "akiyoshi83-cfn-test",
