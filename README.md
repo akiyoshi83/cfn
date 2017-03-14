@@ -1,11 +1,11 @@
-# cfn
+# cfnjs
 
 CloudFormation helper.
 
 ## INSTALL
 
 ```
-npm install -g cfn
+npm install -g cfnjs
 ```
 
 ## USAGE
@@ -25,9 +25,9 @@ cfn.json
 ```
 
 ```
-cfn validate
+cfnjs validate
 ```
 
 ```
-cfn upload
+cfnjs upload
 ```

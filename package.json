@@ -1,5 +1,5 @@
 {
-  "name": "cfn",
+  "name": "cfnjs",
   "description": "CloudFormation helper",
   "version": "0.0.1",
   "author": {
@@ -7,10 +7,10 @@
     "email": "mail@akiyoshi.info"
   },
   "bin": {
-    "cfn": "bin/index.js"
+    "cfnjs": "bin/index.js"
   },
   "bugs": {
-    "url": "git+https://github.com/akiyoshi83/cfn/issues"
+    "url": "git+https://github.com/akiyoshi83/cfnjs/issues"
   },
   "dependencies": {
     "argv": "0.0.2",
@@ -34,7 +34,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akiyoshi83/cfn.git"
+    "url": "git+https://github.com/akiyoshi83/cfnjs.git"
   },
   "scripts": {
     "test": "(cd test; sh test.sh)"
